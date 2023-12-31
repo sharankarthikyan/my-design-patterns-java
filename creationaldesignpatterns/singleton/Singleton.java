@@ -1,7 +1,14 @@
 package creationaldesignpatterns.singleton;
 
 public class Singleton {
-  private static Singleton instance = null;
+  /*
+   * The volatile keyword is typically used in multithreaded applications 
+   * where data is shared between threads. When a thread updates a volatile 
+   * variable, it must also ensure that the updated value is visible to all 
+   * other threads. The volatile keyword ensures this by forcing all threads 
+   * to read the variable from main memory, rather than from their local caches.
+   */
+  private volatile static Singleton instance = null;
 
   private Singleton() {
   }
