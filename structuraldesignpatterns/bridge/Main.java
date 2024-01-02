@@ -6,6 +6,14 @@ package structuraldesignpatterns.bridge;
  * the Abstraction part without being concerned about the Implementation part.
  * 
  * It increases the loose coupling between class abstraction and it’s implementation.
+ * 
+ * Use the Bridge pattern when you want to divide and organize a monolithic 
+ * class that has several variants of some functionality 
+ * (for example, if the class can work with various database servers).
+ * 
+ * Use the pattern when you need to extend a class in several orthogonal (independent) dimensions.
+ * 
+ * Use the Bridge if you need to be able to switch implementations at runtime.
  */
 public class Main {
   public static void main(String[] args) {
