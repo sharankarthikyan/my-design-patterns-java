@@ -1,0 +1,5 @@
+package structuraldesignpatterns.adapter;
+
+public interface MediaPlayer {
+  public void play(String audioType, String filename);
+}
